@@ -9,7 +9,7 @@ export const countryReducer =  (state = [], action) => {
     }
 };
 
-export const currentCountryReducer = (state = {}, action) => {
+export const currentCountryReducer = (state = null, action) => {
     switch (action.type) {
         case FETCH_COUNTRY:
             return {...action.payload}
