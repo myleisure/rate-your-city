@@ -1,0 +1,292 @@
+{
+    "countries":[
+        {
+          "name": "Albania",
+          "id": 1,
+          "alphaCode": "al",
+          "code": "355"
+        },
+        {
+          "name": "Andorra",
+          "id": 2,
+          "alphaCode": "ad",
+          "code": "376"
+        },
+        {
+          "name": "Austria",
+          "id": 3,
+          "alphaCode": "at",
+          "code": "43"
+        },
+        {
+          "name": "Belarus",
+          "id": 4,
+          "alphaCode": "by",
+          "code": "375"
+        },
+        {
+          "name": "Belgium",
+          "id": 5,
+          "alphaCode": "be",
+          "code": "32"
+        },
+        {
+          "name": "Bosnia and Herzegovina",
+          "id": 6,
+          "alphaCode": "ba",
+          "code": "387"
+        },
+        {
+          "name": "Bulgaria",
+          "id": 7,
+          "alphaCode": "bg",
+          "code": "359"
+        },
+        {
+          "name": "Croatia",
+          "id": 8,
+          "alphaCode": "hr",
+          "code": "385"
+        },
+        {
+          "name": "Cyprus",
+          "id": 9,
+          "alphaCode": "cy",
+          "code": "357"
+        },
+        {
+          "name": "Czech Republic",
+          "id": 10,
+          "alphaCode": "cz",
+          "code": "420"
+        },
+        {
+          "name": "Denmark",
+          "id": 11,
+          "alphaCode": "dk",
+          "code": "45"
+        },
+        {
+          "name": "Estonia",
+          "id": 12,
+          "alphaCode": "ee",
+          "code": "372"
+        },
+        {
+          "name": "Faroe Islands",
+          "id": 13,
+          "alphaCode": "fo",
+          "code": "298"
+        },
+        {
+          "name": "Finland",
+          "id": 14,
+          "alphaCode": "fi",
+          "code": "358"
+        },
+        {
+          "name": "France",
+          "id": 15,
+          "alphaCode": "fr",
+          "code": "33"
+        },
+        {
+          "name": "Germany",
+          "id": 16,
+          "alphaCode": "de",
+          "code": "49"
+        },
+        {
+          "name": "Gibraltar",
+          "id": 17,
+          "alphaCode": "gi",
+          "code": "350"
+        },
+        {
+          "name": "Greece",
+          "id": 18,
+          "alphaCode": "gr",
+          "code": "30"
+        },
+        {
+          "name": "Holy See",
+          "id": 20,
+          "alphaCode": "va",
+          "code": "379"
+        },
+        {
+          "name": "Hungary",
+          "id": 21,
+          "alphaCode": "hu",
+          "code": "36"
+        },
+        {
+          "name": "Iceland",
+          "id": 22,
+          "alphaCode": "is",
+          "code": "354"
+        },
+        {
+          "name": "Ireland",
+          "id": 23,
+          "alphaCode": "ie",
+          "code": "353"
+        },
+        {
+          "name": "Italy",
+          "id": 25,
+          "alphaCode": "it",
+          "code": "39"
+        },
+        {
+          "name": "Latvia",
+          "id": 27,
+          "alphaCode": "lv",
+          "code": "371"
+        },
+        {
+          "name": "Liechtenstein",
+          "id": 28,
+          "alphaCode": "li",
+          "code": "423"
+        },
+        {
+          "name": "Lithuania",
+          "id": 29,
+          "alphaCode": "lt",
+          "code": "370"
+        },
+        {
+          "name": "Luxembourg",
+          "id": 30,
+          "alphaCode": "lu",
+          "code": "352"
+        },
+        {
+          "name": "Macedonia (the former Yugoslav Republic of)",
+          "id": 31,
+          "alphaCode": "mk",
+          "code": "389"
+        },
+        {
+          "name": "Malta",
+          "id": 32,
+          "alphaCode": "mt",
+          "code": "356"
+        },
+        {
+          "name": "Moldova (Republic of)",
+          "id": 33,
+          "alphaCode": "md",
+          "code": "373"
+        },
+        {
+          "name": "Monaco",
+          "id": 34,
+          "alphaCode": "mc",
+          "code": "377"
+        },
+        {
+          "name": "Montenegro",
+          "id": 35,
+          "alphaCode": "me",
+          "code": "382"
+        },
+        {
+          "name": "Netherlands",
+          "id": 36,
+          "alphaCode": "nl",
+          "code": "31"
+        },
+        {
+          "name": "Norway",
+          "id": 37,
+          "alphaCode": "no",
+          "code": "47"
+        },
+        {
+          "name": "Poland",
+          "id": 38,
+          "alphaCode": "pl",
+          "code": "48"
+        },
+        {
+          "name": "Portugal",
+          "id": 39,
+          "alphaCode": "pt",
+          "code": "351"
+        },
+        {
+          "name": "Romania",
+          "id": 41,
+          "alphaCode": "ro",
+          "code": "40"
+        },
+        {
+          "name": "Russian Federation",
+          "id": 42,
+          "alphaCode": "ru",
+          "code": "7"
+        },
+        {
+          "name": "San Marino",
+          "id": 43,
+          "alphaCode": "sm",
+          "code": "378"
+        },
+        {
+          "name": "Serbia",
+          "id": 44,
+          "alphaCode": "rs",
+          "code": "381"
+        },
+        {
+          "name": "Slovakia",
+          "id": 45,
+          "alphaCode": "sk",
+          "code": "421"
+        },
+        {
+          "name": "Slovenia",
+          "id": 46,
+          "alphaCode": "si",
+          "code": "386"
+        },
+        {
+          "name": "Spain",
+          "id": 47,
+          "alphaCode": "es",
+          "code": "34"
+        },
+        {
+          "name": "Svalbard and Jan Mayen",
+          "id": 48,
+          "alphaCode": "sj",
+          "code": "4779"
+        },
+        {
+          "name": "Sweden",
+          "id": 49,
+          "alphaCode": "se",
+          "code": "46"
+        },
+        {
+          "name": "Switzerland",
+          "id": 50,
+          "alphaCode": "ch",
+          "code": "41"
+        },
+        {
+          "name": "Ukraine",
+          "id": 51,
+          "alphaCode": "ua",
+          "code": "380"
+        },
+        {
+          "name": "United Kingdom of Great Britain and Northern Ireland",
+          "id": 52,
+          "alphaCode": "gb",
+          "code": "44"
+        }
+      ]
+}

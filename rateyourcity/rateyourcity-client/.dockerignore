@@ -1,0 +1,6 @@
+# ignore .git and .cache folders
+.git
+.cache
+.idea
+Dockerfile.DEV
+node_modules
