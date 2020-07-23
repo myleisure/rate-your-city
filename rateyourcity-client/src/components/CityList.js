@@ -4,23 +4,31 @@ import {connect} from 'react-redux';
 
 class CityList extends React.Component {
 
-    handleChange = (event, data) => {
+    handleChange = (event, {value}) => {
     }
 
     render() {
-        if (!this.props.cities.length) {
+        if (!this.props.cities) {
             return null;
         }
+
+        const cities = Object.values(this.props.cities).map(city => {
+            return {
+                key: city.name + ' ' + city.lat + ' ' + city.lng,
+                value: city.name,
+                text: city.name
+            };
+        });
         return (
             <React.Fragment>
                 <Header as='h4'>Select a city to be rated</Header>
                 <Dropdown
-                    placeholder='Selecte city'
+                    placeholder='Select a city'
                     fluid
                     search
                     selection
                     onChange={this.handleChange}
-                    options={this.props.cities}
+                    options={cities}
                 />
             </React.Fragment>
 
@@ -30,13 +38,7 @@ class CityList extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        cities: state.cities.map(city => {
-            return {
-                key: city.name + ' ' + city.lat + ' ' + city.lng,
-                value: city.name,
-                text: city.name
-            };
-        })
+        cities: state.cities[state.currentCountry.id]
     }
 }
 

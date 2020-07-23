@@ -1,7 +1,7 @@
 import React from "react";
 import {Dropdown, Header} from "semantic-ui-react";
 import {connect} from 'react-redux';
-import {fetchCountries, fetchCitiesInCurrentCountry} from "../actions";
+import {fetchCountries, fetchCitiesInCurrentCountry, setCUrrentCountry} from "../actions";
 
 class CountryList extends React.Component {
 
@@ -10,10 +10,22 @@ class CountryList extends React.Component {
     }
 
     handleChange = (event, {value}) => {
-        this.props.fetchCitiesInCurrentCountry(value);
+        const currentCountry = this.props.countries[value];
+        this.props.setCUrrentCountry(currentCountry);
+        this.props.fetchCitiesInCurrentCountry(currentCountry);
     }
 
     render() {
+        if (!this.props.countries) {
+            return null;
+        }
+        const countries = Object.values(this.props.countries).map(c => ({
+                key: c.alphaCode,
+                value: c.id,
+                text: c.name,
+                flag: c.alphaCode.toLowerCase()
+            })
+        );
         return (
             <React.Fragment>
                 <Header as='h4'>Select a country first</Header>
@@ -23,7 +35,7 @@ class CountryList extends React.Component {
                     search
                     selection
                     onChange={this.handleChange}
-                    options={this.props.countries}
+                    options={countries}
                 />
             </React.Fragment>
 
@@ -32,16 +44,8 @@ class CountryList extends React.Component {
 }
 
 const mapStateToProps = state => {
-    return {
-        countries: state.countries.map(c => {
-            return {
-                key: c.alphaCode,
-                value: c.id,
-                text: c.name,
-                flag: c.alphaCode.toLowerCase()
-            }
-        })
-    }
+    return {countries: state.countries}
 }
 
-export default connect(mapStateToProps, {fetchCountries, fetchCitiesInCurrentCountry})(CountryList);
+
+export default connect(mapStateToProps, {fetchCountries, fetchCitiesInCurrentCountry, setCUrrentCountry})(CountryList);

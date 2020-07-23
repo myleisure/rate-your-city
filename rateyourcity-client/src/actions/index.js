@@ -1,21 +1,26 @@
 import httpClient from '../http/client';
-import {FETCH_CITIES, FETCH_COUNTRIES} from "./action-type";
+import {FETCH_CITIES, FETCH_COUNTRIES, FETCH_COUNTRY} from "./action-type";
 
 export const fetchCountries = () => async dispatch => {
     const response = await httpClient.get('/countries');
     dispatch({type: FETCH_COUNTRIES, payload: response.data});
 }
 
-export const fetchCitiesInCurrentCountry = idCountry => async dispatch => {
+export const setCUrrentCountry = country => {
+    return {
+        type: FETCH_COUNTRY,
+        payload: country.alphaCode
+    }
+}
 
-    // TODO change this call later, this is not necessary
-    const currentCountryResponse = await httpClient.get(`/countries/${idCountry}`);
-    const currentCountry = currentCountryResponse.data;
-    if (!currentCountry) {
+export const fetchCitiesInCurrentCountry = country => async dispatch => {
+
+    if (!country) {
         dispatch({type: FETCH_CITIES, payload: []})
     } else {
-        const response = await httpClient.get('/cities', {params: {country: currentCountry.alphaCode}});
-        dispatch({type: FETCH_CITIES, payload: response.data});
+        const response = await httpClient.get('/cities', {params: {country: country.alphaCode}});
+        dispatch({type: FETCH_CITIES, payload: {countryId: country.alphaCode, cities: response.data}});
+
     }
 
 }
